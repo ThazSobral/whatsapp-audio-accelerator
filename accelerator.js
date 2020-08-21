@@ -4,25 +4,45 @@
 
 const interval = setInterval(() => {
   const header = document.querySelector('._1QUKR')
+
   if (header) {
     console.log(header)
     clearInterval(interval)
 
-    // TASKS
-    // [] criar elemento para conter dois botões (um de diminuir e um de aumentar) e um indicador de velocidade atual
+    const container = document.createElement('div')
+    const increaseButton = document.createElement('button')
+    const speedValue = document.createElement('p')
+    const decreaseButton = document.createElement('button')
+    
+    increaseButton.innerHTML = '>'
+    speedValue.innerHTML = '1.0'
+    decreaseButton.innerHTML = '<'
 
-    const button = document.createElement('button')
-    button.innerHTML = '+'
-    button.classList.add('twoTimesButton')
+    container.classList.add('speed-container')
+    increaseButton.classList.add('speed-button')
+    speedValue.classList.add('speed-value')
+    decreaseButton.classList.add('speed-button')
 
-    button.addEventListener('click', () => {
+    increaseButton.addEventListener('click', () => {
       const audios = document.querySelectorAll('audio')
       audios.forEach((audio) => {
         audio.playbackRate += 0.5
-        button.innerHTML = audio.playbackRate
+        speedValue.innerHTML = audio.playbackRate
       })
     })
 
-    header.appendChild(button)
+    decreaseButton.addEventListener('click', () => {
+      const audios = document.querySelectorAll('audio')
+      audios.forEach((audio) => {
+        audio.playbackRate -= 0.5
+        speedValue.innerHTML = audio.playbackRate
+      })
+    })
+
+    container.append(decreaseButton)
+    container.append(speedValue)
+    container.append(increaseButton)
+    header.appendChild(container)
+    
   }
 },1000)

@@ -5,6 +5,7 @@
   "manifest_version": 2,
   "content_scripts": [{
       "js": ["accelerator.js"],
+      "css": ["style.css"],
       "matches": ["https://web.whatsapp.com/"]
   }]
 }
