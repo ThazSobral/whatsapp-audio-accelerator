@@ -1,30 +1,36 @@
-/* TASKS
-[] melhorar estilização dos elementos
-*/
 .speed-container {
-  padding: .5px 2px;
+  width: 10vh;
+  margin: 0 1vh 0 2vh;
   border-radius: 10px;
 
   display: inline-flex;
   align-items: center;
 
-  background: #a4a4a4;
+  background: #ededed;
 }
 
 .speed-value {
-  margin: 0 2px;
+
+  width: 15vh;
 
   font-weight: bolder;
-  color: #00e676;
+  text-align: center;
+  color: #919191;
 }
 
 .speed-button {
   padding: 5px 8px;
-  margin: 5px;
 
   border: none;
-  border-radius: 20px;
-  color: #a4a4a4;
+  color: #ededed;
   font-weight: bolder;
-  background-color: #ffffff;
+  background-color: #919191;
+}
+
+.button-left {
+  border-radius: 10px 0 0 10px;
+}
+
+.button-right {
+  border-radius: 0 10px 10px 0;
 }

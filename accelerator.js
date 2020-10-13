@@ -1,12 +1,12 @@
 // TASKS
-// [] básico de clean code nesse código
 // [] melhorar a organização das pastas no código
+// []corrigir erro na chegangem do limite
+
 
 const interval = setInterval(() => {
   const header = document.querySelector('._1QUKR')
 
   if (header) {
-    console.log(header)
     clearInterval(interval)
 
     const container = document.createElement('div')
@@ -15,27 +15,33 @@ const interval = setInterval(() => {
     const decreaseButton = document.createElement('button')
     
     increaseButton.innerHTML = '>'
-    speedValue.innerHTML = '1.0'
+    speedValue.innerHTML = '1'
     decreaseButton.innerHTML = '<'
 
     container.classList.add('speed-container')
     increaseButton.classList.add('speed-button')
+    increaseButton.classList.add('button-right')
     speedValue.classList.add('speed-value')
     decreaseButton.classList.add('speed-button')
+    decreaseButton.classList.add('button-left')
 
     increaseButton.addEventListener('click', () => {
       const audios = document.querySelectorAll('audio')
       audios.forEach((audio) => {
-        audio.playbackRate += 0.5
-        speedValue.innerHTML = audio.playbackRate
+        if (parseFloat(audio.playbackRate) < 3) {
+          audio.playbackRate += 0.5
+          speedValue.innerHTML = audio.playbackRate
+        }
       })
     })
 
     decreaseButton.addEventListener('click', () => {
       const audios = document.querySelectorAll('audio')
       audios.forEach((audio) => {
-        audio.playbackRate -= 0.5
-        speedValue.innerHTML = audio.playbackRate
+        if (parseFloat(audio.playbackRate) > 0.5) {
+          audio.playbackRate -= 0.5
+          speedValue.innerHTML = audio.playbackRate
+        }
       })
     })
 
@@ -45,4 +51,4 @@ const interval = setInterval(() => {
     header.appendChild(container)
     
   }
-},1000)
+},100)
