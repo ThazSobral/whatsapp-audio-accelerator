@@ -29,6 +29,6 @@
 
 ## Para contriuir:
 
-Se deseja reportar algum erro ou segerir alguma melhoria basta abrir uma issue.
+Se deseja reportar algum erro ou sugerir alguma melhoria basta abrir uma issue.:wink:
 
 > Conto com você para me ajudar a melhorar esse projeto!
