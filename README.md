@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/images/icon.png" width="10%">
+</p>
+
 # whatsapp-audio-accelerator
 > Esse projeto foi inspirado em um [vídeo](https://www.youtube.com/watch?v=j0Ih1xVyKbY&t=669s) do canal do [Programador-br](https://www.youtube.com/channel/UCrdgeUeCll2QKmqmihIgKBQ). A ideia é uma extensão do google chrome para acelerar audios do whatsapp e não perdermos mais aquele valisoso tempo com audios gingantescos.
 
