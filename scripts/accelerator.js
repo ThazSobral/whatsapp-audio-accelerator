@@ -1,7 +1,3 @@
-// TASKS
-// [] melhorar a organização das pastas no código
-// []corrigir erro na chegangem do limite
-
 const interval = setInterval(() => {
   const header = document.querySelector('._1QUKR')
 

@@ -2,17 +2,13 @@
   width: 10vh;
   margin: 0 1vh 0 2vh;
   border-radius: 10px;
-
   display: inline-flex;
   align-items: center;
-
   background: #ededed;
 }
 
 .speed-value {
-
   width: 15vh;
-
   font-weight: bolder;
   text-align: center;
   color: #919191;
@@ -20,7 +16,6 @@
 
 .speed-button {
   padding: 5px 8px;
-
   border: none;
   color: #ededed;
   font-weight: bolder;

@@ -4,8 +4,8 @@
   "description": "Extesion to audio accelerator for Whatsapp.",
   "manifest_version": 2,
   "content_scripts": [{
-      "js": ["accelerator.js"],
-      "css": ["style.css"],
+      "js": ["/scripts/accelerator.js"],
+      "css": ["/scripts/style.css"],
       "matches": ["https://web.whatsapp.com/"]
   }]
 }
