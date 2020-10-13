@@ -26,6 +26,3 @@
 <img src="./images/step5.png" alt="print da extensão">
 
 - agora é só economizar tempo quando for ouvir aqueles audios gigantescos. :thumbsup:
-
-ou
-
