@@ -3,6 +3,9 @@
   "version": "0.1",
   "description": "Extesion to audio accelerator for Whatsapp.",
   "manifest_version": 2,
+  "icons": {
+    "128": "/images/icon.png"
+  },
   "content_scripts": [{
       "js": ["/scripts/accelerator.js"],
       "css": ["/scripts/style.css"],
