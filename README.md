@@ -31,7 +31,7 @@
 
 - agora é só economizar tempo quando for ouvir aqueles audios gigantescos. :thumbsup:
 
-## Para contriuir:
+## Para contribuir:
 
 Se deseja reportar algum erro ou sugerir alguma melhoria basta abrir uma issue.:wink:
 
